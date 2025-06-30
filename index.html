@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="master.css" />
+    <title>Frontend Mentor | Tip Calculator App</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Left Section -->
+      <section class="left-section">
+        <!-- Bill Input -->
+        <div class="input-box">
+          <label for="bill-input" class="bill">Bill</label>
+          <div class="input-wrapper">
+            <img src="./images/icon-dollar.svg" alt="" />
+            <input type="text" id="bill-input" placeholder="0" />
+          </div>
+        </div>
+
+        <!-- Tip Selection -->
+        <div class="select-tip">
+          <p>Select Tip %</p>
+          <div class="tip-options">
+            <button class="tip" type="button">5%</button>
+            <button class="tip" type="button">10%</button>
+            <button class="tip" type="button">15%</button>
+            <button class="tip" type="button">25%</button>
+            <button class="tip" type="button">5%</button>
+            <input
+              type="text"
+              class="tip custom"
+              placeholder="Custom"
+              aria-label="Custom Tip %"
+              min="0"
+            />
+          </div>
+        </div>
+
+        <!-- Number of People Input -->
+        <div class="input-box">
+          <label for="num-input" class="num">Number of People</label>
+          <div class="input-wrapper zero" id="zero-num">
+            <img src="./images/icon-person.svg" alt="" />
+            <input type="text" id="num-input" placeholder="0"/>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Section -->
+      <section class="right-section">
+        <div class="amount-box">
+          <!-- Tip Amount -->
+          <div class="amount-box-content">
+            <div class="amount-box-header">
+              <h2 class="amount-header">Tip Amount</h2>
+              <p class="person">/ person</p>
+            </div>
+            <h2 class="total-price" id="tip-amount">$0.00</h2>
+          </div>
+
+          <!-- Total Amount -->
+          <div class="amount-box-content">
+            <div class="amount-box-header">
+              <h2 class="amount-header">Total</h2>
+              <p class="person">/ person</p>
+            </div>
+            <h2 class="total-price" id="total-amount">$0.00</h2>
+          </div>
+
+          <!-- Reset Button -->
+          <button class="reset-btn" type="reset">Reset</button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
